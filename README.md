@@ -1,7 +1,4 @@
 # PowerShell
-Simplify life for administrators and end users while enhancing security for organizations
-
-# PowerShell for System Administrators
 
 A comprehensive collection of PowerShell scripts, tools, modules, and best practices designed to help System Administrators automate, manage, and optimize Windows environments efficiently.
 
@@ -38,16 +35,3 @@ Whether you're just getting started with PowerShell or you're an experienced scr
 
 ---
 
-## 📂 Repository Structure
-
-```plaintext
-PowerShell-SysAdmin/
-├── Scripts/              # Individual automation scripts
-├── Modules/              # Custom PowerShell modules
-├── Functions/            # Reusable functions
-├── Examples/             # Learning and demonstration scripts
-├── Docs/                 # Detailed documentation
-├── Utils/                # Utility scripts and helpers
-├── Tests/                # Pester tests (where available)
-├── Assets/               # Images and other resources
-└── README.md
