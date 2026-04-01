@@ -35,3 +35,8 @@ Whether you're just getting started with PowerShell or you're an experienced scr
 
 ---
 
+## Prerequisites
+
+* Windows PowerShell 5.1 (built into Windows 10/11 & Server)
+* PowerShell 7+ (recommended for new scripts - Download here)
+* Administrator privileges (for many management tasks)
