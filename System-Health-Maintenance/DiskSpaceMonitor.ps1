@@ -104,7 +104,7 @@ foreach ($computer in $ComputerName) {
 # Send alerts if any were triggered
 # ============================================================================
 if ($alertMessages.Count -gt 0) {
-    $subject = "🚨 Disk Space Alert - Low Free Space Detected"
+    $subject = "Disk Space Alert - Low Free Space Detected"
     $body = @"
 Disk Space Monitoring Alert
 ===========================
@@ -123,10 +123,10 @@ Log file: $LogFile
                              -Subject $subject `
                              -Body $body `
                              -ErrorAction Stop
-            Write-Log "✅ Email alert sent successfully to $($ToEmail -join ', ')"
+            Write-Log "Email alert sent successfully to $($ToEmail -join ', ')"
         }
         catch {
-            Write-Log "❌ Failed to send email: $($_.Exception.Message)"
+            Write-Log "Failed to send email: $($_.Exception.Message)"
         }
     }
 
@@ -143,10 +143,10 @@ Log file: $LogFile
                               -ContentType "application/json" `
                               -ErrorAction Stop | Out-Null
 
-            Write-Log "✅ Slack alert sent successfully"
+            Write-Log "Slack alert sent successfully"
         }
         catch {
-            Write-Log "❌ Failed to send Slack alert: $($_.Exception.Message)"
+            Write-Log "Failed to send Slack alert: $($_.Exception.Message)"
         }
     }
 }
