@@ -151,7 +151,7 @@ Log file: $LogFile
     }
 }
 else {
-    Write-Log "✅ No drives below threshold ($ThresholdPercent%). All clear."
+    Write-Log "No drives below threshold ($ThresholdPercent%). All clear."
 }
 
 Write-Log "=== Disk Space Monitoring Completed ===`n"
