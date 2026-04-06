@@ -17,7 +17,7 @@
 
     # Remote servers + custom threshold + email + Slack
     .\DiskSpaceMonitor.ps1 -ComputerName "SRV01","SRV02" -ThresholdPercent 20 `
-        -SmtpServer "smtp.contoso.com" -FromEmail "alert@contoso.com" -ToEmail "admin@contoso.com" `
+        -SmtpServer "smtp.abc.com" -FromEmail "alert@abc.com" -ToEmail "admin@abc.com" `
         -SlackWebhook "https://hooks.slack.com/services/XXXXXXXXX/XXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXX"
 
 .NOTES
