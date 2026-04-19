@@ -67,4 +67,3 @@ while ($true) {
 
     Start-Sleep -Seconds $interval
 }
-
