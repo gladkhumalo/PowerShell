@@ -1,3 +1,10 @@
+<# It does exactly what you asked:
+    1. Tracks CPU usage over time
+    2. Alerts when CPU is too high
+    3. Monitors RAM usage
+    4. Outputs top 5 processes (CPU + Memory)
+#>
+
 # ============================
 # CONFIGURATION
 # ============================
