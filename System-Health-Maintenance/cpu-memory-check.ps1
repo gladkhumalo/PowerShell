@@ -13,3 +13,20 @@ function Get-CPUUsage {
     return [math]::Round($cpu.CounterSamples.CookedValue, 2)
 }
 
+# ============================
+# FUNCTION: Get Memory Usage
+# ============================
+function Get-MemoryUsage {
+    $os = Get-CimInstance Win32_OperatingSystem
+    $total = [math]::Round($os.TotalVisibleMemorySize / 1MB, 2)
+    $free = [math]::Round($os.FreePhysicalMemory / 1MB, 2)
+    $used = [math]::Round($total - $free, 2)
+    $percentUsed = [math]::Round(($used / $total) * 100, 2)
+
+    return [PSCustomObject]@{
+        TotalGB = $total
+        UsedGB  = $used
+        FreeGB  = $free
+        UsagePercent = $percentUsed
+    }
+}
