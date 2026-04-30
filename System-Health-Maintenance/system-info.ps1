@@ -1,42 +1,54 @@
-# PowerShell
+<#
+.SYNOPSIS
+Collects system information from a Windows machine.
 
-A comprehensive collection of PowerShell scripts, tools, modules, and best practices designed to help System Administrators automate, manage, and optimize Windows environments efficiently.
+.DESCRIPTION
+Retrieves CPU, RAM, disk, OS, network info, and uptime.
+#>
 
-![PowerShell](https://img.shields.io/badge/PowerShell-7.4-blue.svg)
-![Windows](https://img.shields.io/badge/Platform-Windows-0078D4.svg)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+Write-Host "===== SYSTEM INFORMATION =====" -ForegroundColor Cyan
 
----
+# Computer Name
+$ComputerName = $env:COMPUTERNAME
+Write-Host "`nComputer Name: $ComputerName"
 
-## 📖 About This Repository
+# Operating System
+$OS = Get-CimInstance Win32_OperatingSystem
+Write-Host "OS: $($OS.Caption)"
+Write-Host "Version: $($OS.Version)"
 
-This repository is dedicated to **PowerShell** — Microsoft's powerful task automation and configuration management framework. It contains practical scripts, functions, modules, and guides specifically created for **System Administrators**, IT Pros, and DevOps engineers working with Windows, Active Directory, Azure, servers, workstations, and infrastructure.
+# CPU Info
+$CPU = Get-CimInstance Win32_Processor
+Write-Host "`nCPU: $($CPU.Name)"
 
-Whether you're just getting started with PowerShell or you're an experienced scripter looking for reusable solutions, this repo aims to make your daily administrative tasks faster, more reliable, and less repetitive.
+# RAM Info
+$TotalRAM = [math]::Round($OS.TotalVisibleMemorySize / 1MB, 2)
+$FreeRAM = [math]::Round($OS.FreePhysicalMemory / 1MB, 2)
 
-### Why PowerShell?
+Write-Host "Total RAM: $TotalRAM GB"
+Write-Host "Free RAM: $FreeRAM GB"
 
-- Native to Windows (and now cross-platform with PowerShell 7+)
-- Deep integration with Windows technologies (Active Directory, Hyper-V, Exchange, Azure, etc.)
-- Object-oriented pipeline (not just text)
-- Powerful remoting capabilities
-- Modern scripting language with .NET integration
+# Disk Info
+Write-Host "`nDisk Information:"
+$Disks = Get-CimInstance Win32_LogicalDisk -Filter "DriveType=3"
 
----
+foreach ($disk in $Disks) {
+    $FreeSpace = [math]::Round($disk.FreeSpace / 1GB, 2)
+    $TotalSpace = [math]::Round($disk.Size / 1GB, 2)
 
-## ✨ Features
+    Write-Host "Drive $($disk.DeviceID): $FreeSpace GB free of $TotalSpace GB"
+}
 
-- **Ready-to-use scripts** for common sysadmin tasks
-- **Reusable functions** and modules
-- **Best practices** and modern PowerShell techniques
-- **Error handling** and logging examples
-- **Documentation** for each major script
-- **Cross-version compatibility** (Windows PowerShell 5.1 & PowerShell 7+)
+# Network Info
+Write-Host "`nNetwork Information:"
+$IP = Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.IPAddress -notlike "169.*" }
 
----
+foreach ($ipaddr in $IP) {
+    Write-Host "IP Address: $($ipaddr.IPAddress)"
+}
 
-## Prerequisites
+# System Uptime
+$Uptime = (Get-Date) - $OS.LastBootUpTime
+Write-Host "`nSystem Uptime: $($Uptime.Days) days, $($Uptime.Hours) hours"
 
-* Windows PowerShell 5.1 (built into Windows 10/11 & Server)
-* PowerShell 7+ (recommended)
-* Administrator privileges (for many management tasks)
+Write-Host "`n===== END OF REPORT =====" -ForegroundColor Cyan
