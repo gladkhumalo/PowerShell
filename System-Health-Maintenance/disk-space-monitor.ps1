@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Monitors disk space on local or remote servers and sends alerts if below threshold.
+    Monitors disk space on local or remote servers and sends alerts if below threshold
 
 .PARAMETER ComputerName
     One or more computer names (default: local machine)
