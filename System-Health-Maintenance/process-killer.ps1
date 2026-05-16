@@ -69,3 +69,15 @@ foreach ($process in $processes) {
 }
 
 Write-Host "`nScan complete." -ForegroundColor Green
+
+<#
+What to add next:
+
+    Email alerts
+    Teams/Slack notifications
+    Whitelisting critical apps
+    Scheduled Task automation
+    CPU percentage instead of CPU time
+    Export logs to CSV
+    Interactive menu system
+#>
