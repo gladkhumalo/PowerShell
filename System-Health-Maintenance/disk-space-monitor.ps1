@@ -83,8 +83,5 @@ if ($Alert -and $EmailTo) {
     Write-Host "Alert email sent!" -ForegroundColor Red
 }
 
-<<<<<<< HEAD
 Write-Host "Disk space check completed." -ForegroundColor Green
-=======
-Write-Host "Disk space check completed." -ForegroundColor Green
->>>>>>> f8fd753002310f44a37ca0e8fd6eb9586cbab12d
+
