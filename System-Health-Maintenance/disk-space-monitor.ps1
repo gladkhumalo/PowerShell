@@ -1,6 +1,10 @@
 <#
 .SYNOPSIS
+<<<<<<< HEAD
     Monitors disk space on local or remote servers and sends alerts if below threshold
+=======
+    Monitors disk space on local or remote servers and sends alerts if below threshold.
+>>>>>>> f8fd753002310f44a37ca0e8fd6eb9586cbab12d
 
 .PARAMETER ComputerName
     One or more computer names (default: local machine)
@@ -79,4 +83,8 @@ if ($Alert -and $EmailTo) {
     Write-Host "Alert email sent!" -ForegroundColor Red
 }
 
+<<<<<<< HEAD
 Write-Host "Disk space check completed." -ForegroundColor Green
+=======
+Write-Host "Disk space check completed." -ForegroundColor Green
+>>>>>>> f8fd753002310f44a37ca0e8fd6eb9586cbab12d
