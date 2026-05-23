@@ -1,10 +1,6 @@
 <#
 .SYNOPSIS
-<<<<<<< HEAD
-    Monitors disk space on local or remote servers and sends alerts if below threshold
-=======
     Monitors disk space on local or remote servers and sends alerts if below threshold.
->>>>>>> f8fd753002310f44a37ca0e8fd6eb9586cbab12d
 
 .PARAMETER ComputerName
     One or more computer names (default: local machine)
@@ -71,7 +67,7 @@ foreach ($Computer in $ComputerName) {
 
 # Output to console and CSV
 $Report | Format-Table -AutoSize
-$Report | Export-Csv -Path "C:\Logs\DiskSpace_Report_$(Get-Date -Format 'yyyy-MM-dd_HH-mm').csv" -NoTypeInformation
+$Report | Export-Csv -Path "C:\DiskSpace_Report_$(Get-Date -Format 'yyyy-MM-dd_HH-mm').csv" -NoTypeInformation
 
 # Send Email Alert if needed
 if ($Alert -and $EmailTo) {
