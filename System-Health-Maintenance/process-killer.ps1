@@ -110,6 +110,5 @@ What to add next:
     Whitelisting critical apps
     Scheduled Task automation
     CPU percentage instead of CPU time
-    Export logs to CSV
     Interactive menu system
 #>
