@@ -25,7 +25,6 @@ cd "C:\Users\YourUsername\Documents\Key"
 ### or wherever your privatekey.ppk is located
 
 
-
 ## Fix the permissions (Recommended commands)
 ### Best one-liner
 ```powershell
@@ -37,4 +36,3 @@ icacls "privatekey.ppk" /inheritance:r /grant:r "$env:USERNAME:F"
 icacls "privatekey.ppk" /inheritance:r
 icacls "privatekey.ppk" /grant:r "$env:USERNAME:F"
 ```
-
