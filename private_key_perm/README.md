@@ -9,7 +9,7 @@ This happens because your private key file (`.ppk` or `.pem`) has permissions th
 
 ---
 
-## Problem
+### Problem
 
 SSH clients (PuTTY, OpenSSH, etc.) refuse to use private keys that are readable by anyone other than the owner for security reasons.
 
