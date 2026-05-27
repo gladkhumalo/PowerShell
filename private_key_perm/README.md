@@ -22,11 +22,11 @@ SSH clients (PuTTY, OpenSSH, etc.) refuse to use private keys that are readable 
 ```powershell
 cd "C:\Users\YourUsername\Documents\Key"
 ```
-### or wherever your privatekey.ppk is located
+##### or wherever your privatekey.ppk is located
 
 
-## Fix the permissions (Recommended commands)
-### Best one-liner
+##### Fix the permissions (Recommended commands)
+Best one-liner
 ```powershell
 icacls "privatekey.ppk" /inheritance:r /grant:r "$env:USERNAME:F"
 ```
