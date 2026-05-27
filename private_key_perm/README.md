@@ -15,9 +15,9 @@ SSH clients (PuTTY, OpenSSH, etc.) refuse to use private keys that are readable 
 
 ---
 
-## Solution (PowerShell)
-### 1. Open PowerShell as Administrator
-### 2. Navigate to your key folder
+### Solution (PowerShell)
+1. Open PowerShell as Administrator
+2. 2. Navigate to your key folder
 
 ```powershell
 cd "C:\Users\YourUsername\Documents\Key"
