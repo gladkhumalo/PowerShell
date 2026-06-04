@@ -5,9 +5,10 @@
 # ==========================================
 
 # CONFIGURATION
-$cpuThreshold = 300
+$cpuTimeThreshold = 300
 
 $excludedProcesses = @(
+    "Chrome",
     "System",
     "Idle",
     "explorer",
