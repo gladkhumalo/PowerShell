@@ -1,7 +1,7 @@
 # ==========================================
 # process-killer.ps1
 # Automatically kills high CPU processes
-# Exports logs to CSV
+# Then exports logs to CSV
 # ==========================================
 
 # CONFIGURATION
