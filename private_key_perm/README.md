@@ -35,7 +35,7 @@ Replace the path with the location of your private key.
 
 3. Remove Inherited Permissions
 ```powershell
-icacls "privatekey.ppk" /inheritance:r
+  icacls "privatekey.ppk" /inheritance:r
 ```
 This removes inherited permissions from the file.
 
