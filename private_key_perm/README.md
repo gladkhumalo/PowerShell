@@ -9,15 +9,19 @@ This happens because your private key file (`.ppk` or `.pem`) has permissions th
 
 ---
 
-### Problem
+## Why This Happens
+SSH clients enforce strict security requirements for private keys.
 
-SSH clients (PuTTY, OpenSSH, etc.) refuse to use private keys that are readable by anyone other than the owner for security reasons.
+If Windows permissions allow other users or groups to read the file, SSH will refuse to use the key and display a permissions error.
 
 ---
 
-### Solution (PowerShell)
+### Solution
 1. Open PowerShell as Administrator
-2. Navigate to your key folder
+Search for PowerShell, right-click it, and select:
+```
+Run as Administrator
+```
 
 ```powershell
 cd "C:\Users\YourUsername\Documents\Key"
