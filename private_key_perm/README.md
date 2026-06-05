@@ -20,14 +20,45 @@ If Windows permissions allow other users or groups to read the file, SSH will re
 1. Open PowerShell as Administrator
 Search for PowerShell, right-click it, and select:
 ```
-Run as Administrator
+  Run as Administrator
 ```
+<br>
 
 2. Navigate to the Key Location
 Example:
 ```powershell
-cd "C:\Users\YourUsername\Documents\Keys"
+  cd "C:\Users\YourUsername\Documents\Keys"
+```
+Replace the path with the location of your private key.
+
+<br>
+
+3. Remove Inherited Permissions
+```powershell
+icacls "privatekey.ppk" /inheritance:r
+```
+This removes inherited permissions from the file.
+
+<br>
+
+4. Grant Full Control to the Current User
+```powershell
+  icacls "privatekey.ppk" /grant:r "$env:USERNAME:F"
+```
+This grants full control to the file owner only.
+
+<br>
+
+### Recommended One-Liner
+Run the following command to perform both actions at once:
+```powershell  
+  icacls "privatekey.ppk" /inheritance:r /grant:r "$env:USERNAME:F"
 ```
 
+## Verify Permissions
+To view the current permissions:
+```powershell
+  icacls "privatekey.ppk"
+```
+You should see only your user account listed with Full Control permissions.
 
-Replace the path with the location of your private key.
