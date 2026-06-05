@@ -23,20 +23,11 @@ Search for PowerShell, right-click it, and select:
 Run as Administrator
 ```
 
+2. Navigate to the Key Location
+Example:
 ```powershell
-cd "C:\Users\YourUsername\Documents\Key"
-```
-### or wherever your privatekey.ppk is located
-
-
-### Fix the permissions (Recommended commands)
-Best one-liner
-```powershell
-icacls "privatekey.ppk" /inheritance:r /grant:r "$env:USERNAME:F"
+cd "C:\Users\YourUsername\Documents\Keys"
 ```
 
-### Or step by step:
-```powershell
-icacls "privatekey.ppk" /inheritance:r
-icacls "privatekey.ppk" /grant:r "$env:USERNAME:F"
-```
+
+Replace the path with the location of your private key.
