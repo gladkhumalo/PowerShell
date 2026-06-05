@@ -1,6 +1,6 @@
 # Fixing "Bad Permissions" on SSH Private Key (Windows + PuTTY)
 
-A common issue when using PuTTY or OpenSSH on Windows where you see:
+A common issue when using PuTTY, OpenSSH, or other SSH clients on Windows is receiving an error like:
 
 > WARNING: UNPROTECTED PRIVATE KEY FILE!  
 > Bad permissions. Try removing permissions for user: UNKNOWN/...
