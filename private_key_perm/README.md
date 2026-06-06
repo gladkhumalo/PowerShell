@@ -43,7 +43,7 @@ This removes inherited permissions from the file.
 
 4. Grant Full Control to the Current User
 ```powershell
-  icacls "privatekey.ppk" /grant:r "$env:USERNAME:F"
+  icacls "privatekey.ppk" /grant:r "$env:COMPUTERNAME\$env:USERNAME:F"
 ```
 This grants full control to the file owner only.
 
@@ -52,7 +52,7 @@ This grants full control to the file owner only.
 ### Recommended One-Liner
 Run the following command to perform both actions at once:
 ```powershell  
-  icacls "privatekey.ppk" /inheritance:r /grant:r "$env:USERNAME:F"
+  icacls "privatekey.ppk" /inheritance:r /grant:r "$env:COMPUTERNAME\$env:USERNAME:F"
 ```
 
 ## Verify Permissions
