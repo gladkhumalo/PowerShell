@@ -62,3 +62,13 @@ To view the current permissions:
 ```
 You should see only your user account listed with Full Control permissions.
 
+<br>
+
+Result
+After updating the file permissions:
+- PuTTY accepts the key
+- OpenSSH accepts the key
+- Security warning disappears
+- SSH authentication works normally
+```
+
