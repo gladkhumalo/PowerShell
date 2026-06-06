@@ -70,5 +70,5 @@ After updating the file permissions:
 - OpenSSH accepts the key
 - Security warning disappears
 - SSH authentication works normally
-```
 
+---
