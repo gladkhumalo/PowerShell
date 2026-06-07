@@ -1,6 +1,6 @@
 # Fixing "Bad Permissions" on SSH Private Key (Windows + PuTTY)
 
-A common issue when using PuTTY or OpenSSH on Windows where you see:
+A common issue when using PuTTY, OpenSSH, or other SSH clients on Windows is receiving an error like:
 
 > WARNING: UNPROTECTED PRIVATE KEY FILE!  
 > Bad permissions. Try removing permissions for user: UNKNOWN/...
@@ -9,30 +9,66 @@ This happens because your private key file (`.ppk` or `.pem`) has permissions th
 
 ---
 
-### Problem
+## Why This Happens
+SSH clients enforce strict security requirements for private keys.
 
-SSH clients (PuTTY, OpenSSH, etc.) refuse to use private keys that are readable by anyone other than the owner for security reasons.
+If Windows permissions allow other users or groups to read the file, SSH will refuse to use the key and display a permissions error.
 
 ---
 
-### Solution (PowerShell)
+### Solution
 1. Open PowerShell as Administrator
-2. Navigate to your key folder
-
-```powershell
-cd "C:\Users\YourUsername\Documents\Key"
+Search for PowerShell, right-click it, and select:
 ```
-### or wherever your privatekey.ppk is located
+  Run as Administrator
+```
+<br>
 
-
-### Fix the permissions (Recommended commands)
-Best one-liner
+2. Navigate to the Key Location
+Example:
 ```powershell
-icacls "privatekey.ppk" /inheritance:r /grant:r "$env:USERNAME:F"
+  cd "C:\Users\YourUsername\Documents\Keys"
+```
+Replace the path with the location of your private key.
+
+<br>
+
+3. Remove Inherited Permissions
+```powershell
+  icacls "privatekey.ppk" /inheritance:r
+```
+This removes inherited permissions from the file.
+
+<br>
+
+4. Grant Full Control to the Current User
+```powershell
+  icacls "privatekey.ppk" /grant:r "$env:COMPUTERNAME\$env:USERNAME:F"
+```
+This grants full control to the file owner only.
+
+<br>
+
+### Recommended One-Liner
+Run the following command to perform both actions at once:
+```powershell  
+  icacls "privatekey.ppk" /inheritance:r /grant:r "$env:COMPUTERNAME\$env:USERNAME:F"
 ```
 
-### Or step by step:
+## Verify Permissions
+To view the current permissions:
 ```powershell
-icacls "privatekey.ppk" /inheritance:r
-icacls "privatekey.ppk" /grant:r "$env:USERNAME:F"
+  icacls "privatekey.ppk"
 ```
+You should see only your user account listed with Full Control permissions.
+
+<br>
+
+Result
+After updating the file permissions:
+- PuTTY accepts the key
+- OpenSSH accepts the key
+- Security warning disappears
+- SSH authentication works normally
+
+---
