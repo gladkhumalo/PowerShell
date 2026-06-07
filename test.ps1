@@ -13,5 +13,8 @@ $userName = Read-Host "Enter your name"
 $number1 = [int](Read-Host "Enter first number")
 $number2 = [int](Read-Host "Enter second number")
 
+$number3 = [int](Read-Host "Enter your age")
+
 $result = $number1 + $number2
 Write-Host "Hello $userName! $number1 + $number2 = $result" -ForegroundColor Green
+
