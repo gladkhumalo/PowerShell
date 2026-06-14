@@ -9,7 +9,7 @@ To develop practical PowerShell automation skills for:
 - IT Support
 - System Administration
 - Microsoft 365
-- Azure Administration
+- Azure Administration and
 - Cybersecurity
 
 
