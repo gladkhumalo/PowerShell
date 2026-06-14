@@ -69,7 +69,7 @@ foreach ($process in $processes) {
     }
 
     # CHECK CPU THRESHOLD
-    if ($process.CPU -gt $cpuThreshold) {
+    if ($process.CPU -gt $cpuTimeThreshold) {
 
         Write-Host "`nHigh CPU Process Detected:" -ForegroundColor Yellow
         Write-Host "Name : $($process.ProcessName)"
