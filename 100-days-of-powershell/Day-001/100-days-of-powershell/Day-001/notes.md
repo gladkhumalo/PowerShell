@@ -1,4 +1,4 @@
-# Day 000 - Environment Setup
+# Day 001 - Environment Setup
 
 100 Days of PowerShell | Setting the foundation before writing a single line.
 
@@ -17,10 +17,6 @@ Get everything in place to start the #100DaysOfPowerShell challenge — a consis
 | Verified PowerShell installation | Done |
 | Created first script | Done |
 
-## Objective
-
-Prepare my environment for 100 Days of PowerShell.
-
 ## Completed
 
 - Created GitHub repository
@@ -28,10 +24,3 @@ Prepare my environment for 100 Days of PowerShell.
 - Verified Git installation
 - Verified PowerShell installation
 - Created first script
-
-## Commands Used
-
-```powershell
-$PSVersionTable
-git --version
-code --version
