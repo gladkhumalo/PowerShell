@@ -23,8 +23,6 @@ $env:USERNAME
 Write-Host "`nDate:"
 Get-Date
 ```
-<!-- Sample output -->
-![Screenshot](assets/Screenshot%202026-06-21%20222146.jpg)
 
 ## Concepts Learned
 
@@ -57,6 +55,8 @@ Glad
 Date:
 Sunday, June 21, 2026
 ```
+<!-- Sample output -->
+![Screenshot](assets/Screenshot%202026-06-21%20222146.jpg)
 
 ## Reflection
 
