@@ -6,13 +6,12 @@ Welcome to my PowerShell learning journey.
 
 To develop practical PowerShell automation skills for:
 
-- IT Support
-- System Administration
+- System Administration and Engineering
 - Microsoft 365
 - Azure Administration and
 - Cybersecurity
 
-## Projects
+## Projects so far
 
 - CPU & Memory Checker
 - Process Killer
