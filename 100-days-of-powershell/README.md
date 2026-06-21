@@ -91,5 +91,3 @@ This challenge is designed to help me:
 ## Connect With Me
 
 Feel free to follow my journey, provide feedback, or connect with me as I continue building my skills in PowerShell, Azure, Microsoft 365, and Cybersecurity.
-
-**Author:** Glad Khumalo
