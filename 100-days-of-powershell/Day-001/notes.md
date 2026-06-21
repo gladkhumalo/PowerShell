@@ -1,4 +1,4 @@
-# Day 000 - Environment Setup
+# Day 001 - Environment Setup
 
 ## Objective
 
