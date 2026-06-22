@@ -44,7 +44,7 @@ Get-Date
 Checking Environment...
 
 PowerShell Version:
-7.5.2
+7.6.3
 
 Computer Name:
 DESKTOP-XXXXXXX
