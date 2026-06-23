@@ -24,6 +24,9 @@ Write-Host
 Get-Date
 ```
 
+##### Sample output
+![System Information](Screenshots/Screenshot%202026-06-21%20222146.jpg)
+
 ## Information Collected
 
 * Computer Name
