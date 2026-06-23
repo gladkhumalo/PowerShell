@@ -56,7 +56,7 @@ Date:
 Sunday, June 21, 2026
 ```
 <!-- Sample output -->
-![Screenshot](assets/Screenshot 2026-06-22 072928.png)
+![The Start](Screenshots/Screenshot%202026-06-22%20072928.png)
 
 ## Reflection
 
