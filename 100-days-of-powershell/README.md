@@ -84,6 +84,7 @@ This challenge is designed to help me:
 | Day | Topic                          | Status |
 | --- | ------------------------------ | ------ |
 | 000 | Environment Setup & Validation | ✅      |
+| 001 | system-information-reporter.ps1                    | ✅        |
 | 001 | Coming Soon                    | ⏳      |
 
 ---
