@@ -38,6 +38,8 @@ System Administrators and IT Support teams frequently monitor Windows services t
 * Summary of issues found
 * CSV export for reporting
 
+![System Health Checker](Screenshots/system-health-checker.jpg)
+
 ## Reflection
 
 This project introduces basic system monitoring and is a step toward building real-world IT automation tools used in production environments.
