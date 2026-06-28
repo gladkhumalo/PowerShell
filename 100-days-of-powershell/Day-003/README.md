@@ -13,6 +13,8 @@ Build a PowerShell script that monitors local disk usage and identifies drives w
 * Displays a formatted report
 * Exports results to a CSV file
 
+![Disk Space Monitor](Screenshots/disk-space-monitor.ps1.jpg)
+
 ## Concepts Learned
 
 * Get-Volume
