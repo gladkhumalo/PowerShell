@@ -40,4 +40,4 @@ This script automates the process of checking drive health and provides an easy-
 
 ## Reflection
 
-Today I built a storage monitoring tool that checks disk utilization, identifies low-space drives, and exports the results for documentation. This is another practical script that demonstrates how PowerShell can simplify routine system administration tasks.
+Today I built a storage monitoring tool that checks disk utilization, identifies low-space drives, and exports the results for documentation. This is another practical script that demonstrates how PowerShell can simplify routine system administration task.
