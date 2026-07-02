@@ -1,5 +1,4 @@
 # Day 003 - Disk Space Monitor
-
 Write-Host "===================================" -ForegroundColor Cyan
 Write-Host "       Disk Space Monitor          " -ForegroundColor Cyan
 Write-Host "===================================" -ForegroundColor Cyan
