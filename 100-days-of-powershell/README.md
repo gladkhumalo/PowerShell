@@ -83,9 +83,10 @@ This challenge is designed to help me:
 
 | Day | Topic                          | Status |
 | --- | ------------------------------ | ------ |
-| 000 | Environment Setup & Validation | ✅      |
-| 001 | system-information-reporter.ps1                    | ✅        |
-| 001 | Coming Soon                    | ⏳      |
+| 000 | Environment Setup & Validation | ✅     |
+| 001 | System Information Reporter    | ✅     |
+| 002 | Service Health Checker |         ✅     |
+| 003 | Coming Soon                    | ⏳      |
 
 ---
 
