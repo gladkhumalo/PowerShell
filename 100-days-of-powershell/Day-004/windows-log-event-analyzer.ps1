@@ -33,3 +33,14 @@ if ($Events.Count -eq 0) {
     Write-Host ""
     Write-Host "Report exported to event-log-report.csv" -ForegroundColor Yellow
 }
+
+
+<#
+    Summary of what the script does:
+This is a simple Windows Event Log Analyzer that:
+Looks at the System event log.
+Pulls the 50 most recent events.
+Filters them to show only Errors and Warnings.
+Displays a clean table of the important information.
+Exports a full report (including messages) to a CSV file for further analysis.
+#>
