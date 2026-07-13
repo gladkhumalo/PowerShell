@@ -1,7 +1,7 @@
 # Day 004 - Windows Event Log Analyzer
 
 Write-Host "===================================" -ForegroundColor Cyan
-Write-Host "      Event Log Analyzer           " -ForegroundColor Cyan
+Write-Host "     Windows Event Log Analyzer           " -ForegroundColor Cyan
 Write-Host "===================================" -ForegroundColor Cyan
 
 # Number of events to retrieve
