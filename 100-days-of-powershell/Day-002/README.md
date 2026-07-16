@@ -38,7 +38,7 @@ System Administrators and IT Support teams frequently monitor Windows services t
 * Summary of issues found
 * CSV export for reporting
 
-![System Health Checker](Screenshots/system-health-checker.jpg)
+![System Health Checker](system-health-checker.jpg)
 
 ## Reflection
 

@@ -26,6 +26,8 @@ Windows Event Logs are one of the primary sources of information when diagnosing
 
 IT Support Technicians and System Administrators regularly review these logs to investigate hardware failures, service crashes, driver problems, and operating system errors.
 
+![Windows Event Log Analyzer](windows-event-log-analyzer.jpg)
+
 ## Output
 
 The script displays:
