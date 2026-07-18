@@ -2,7 +2,7 @@
 
 ## Objective
 
-Build a PowerShell script to monitor the status of critical Windows services then generate a health report.
+Build a PowerShell script to monitor the status of critical Windows services and generate a health report.
 
 ## What It Does
 
