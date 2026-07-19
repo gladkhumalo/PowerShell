@@ -1,0 +1,51 @@
+# Day 006 - Network Connectivity Tester
+
+Write-Host "===================================" -ForegroundColor Cyan
+Write-Host "    Network Connectivity Tester    " -ForegroundColor Cyan
+Write-Host "===================================" -ForegroundColor Cyan
+
+$Targets = @(
+    "8.8.8.8",
+    "1.1.1.1",
+    "google.com",
+    "microsoft.com"
+)
+
+$Results = foreach ($Target in $Targets) {
+
+    Write-Host "Testing $Target..."
+
+    $Reachable = Test-Connection -ComputerName $Target -Count 2 -Quiet
+
+    if ($Reachable) {
+
+        $Average = (Test-Connection -ComputerName $Target -Count 4 |
+            Measure-Object ResponseTime -Average).Average
+
+        [PSCustomObject]@{
+            Target          = $Target
+            Reachable       = "Yes"
+            AveragePingMS   = [math]::Round($Average,2)
+            CheckedOn       = Get-Date
+        }
+    }
+    else {
+
+        [PSCustomObject]@{
+            Target          = $Target
+            Reachable       = "No"
+            AveragePingMS   = "N/A"
+            CheckedOn       = Get-Date
+        }
+    }
+}
+
+Write-Host ""
+Write-Host "Results" -ForegroundColor Green
+
+$Results | Format-Table -AutoSize
+
+$Results | Export-Csv ".\network-connectivity-report.csv" -NoTypeInformation
+
+Write-Host ""
+Write-Host "Report exported to network-connectivity-report.csv" -ForegroundColor Yellow
