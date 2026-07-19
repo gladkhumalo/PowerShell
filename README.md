@@ -88,6 +88,7 @@ This challenge is designed to help me:
 | 002 | Service Health Checker         |  ✔    |
 | 003 | Disk Space Monitor             | ✔      
 | 004 | Windows Event Log Analyzer  |   ✔  |
+| 005 | Network Connectivity Tester  |   ✔  |
 
 
 
