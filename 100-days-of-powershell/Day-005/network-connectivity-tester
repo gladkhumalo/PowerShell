@@ -28,8 +28,7 @@ $Results = foreach ($Target in $Targets) {
             AveragePingMS   = [math]::Round($Average,2)
             CheckedOn       = Get-Date
         }
-    }
-    else {
+    }else {
 
         [PSCustomObject]@{
             Target          = $Target
