@@ -28,8 +28,7 @@ Write-Host "$RAM GB"
 
 Write-Host "`nDisk Information:"
 
-Get-Volume |
-Where-Object { $_.DriveLetter } |
+Get-Volume | Where-Object { $_.DriveLetter } |
 Select-Object @{
     Name = "Drive"
     Expression = { $_.DriveLetter }
