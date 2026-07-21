@@ -12,10 +12,8 @@ $Targets = @(
 )
 
 $Results = foreach ($Target in $Targets) {
-
     Write-Host "Testing $Target..."
-
-    $Reachable = Test-Connection -ComputerName $Target -Count 2 -Quiet
+    $Reachable = Test-Connection -ComputerName $Target -Count 3 -Quiet
 
     if ($Reachable) {
 
