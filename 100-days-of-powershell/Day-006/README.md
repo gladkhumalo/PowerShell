@@ -4,7 +4,7 @@
 
 Retrieve critical Windows System Event Log entries from the last 24 hours using PowerShell.
 
-## Skills Learned
+## Skills Gained
 
 - Get-WinEvent
 - FilterHashtable
