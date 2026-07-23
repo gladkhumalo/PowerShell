@@ -16,7 +16,6 @@ $Results = foreach ($Target in $Targets) {
     $Reachable = Test-Connection -ComputerName $Target -Count 3 -Quiet
 
     if ($Reachable) {
-
         $Average = (Test-Connection -ComputerName $Target -Count 4 |
             Measure-Object ResponseTime -Average).Average
 
