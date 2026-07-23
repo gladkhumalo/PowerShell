@@ -1,5 +1,5 @@
 # ==========================================
-# Day 5 - Windows Event Log Analyzer
+# Day 6 - Windows Event Log Analyzer
 # ==========================================
 
 Write-Host "===== Windows Event Log Analyzer =====" -ForegroundColor Cyan
