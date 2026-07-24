@@ -37,6 +37,7 @@ Get-WinEvent -FilterHashtable @{
     Level = 2
     StartTime = $Yesterday
 } |
+
 Select-Object TimeCreated,
               Id,
               ProviderName,
