@@ -12,7 +12,6 @@ $Events = Get-WinEvent -FilterHashtable @{
     Level = 2
     StartTime = $Yesterday
 }
-
 if ($Events.Count -eq 0)
 {
     Write-Host "`nNo critical errors found in the last 24 hours." -ForegroundColor Green
