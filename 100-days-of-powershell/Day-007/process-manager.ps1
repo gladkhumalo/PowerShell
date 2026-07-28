@@ -1,6 +1,6 @@
 # Day 007 - Process Manager
 
-Write-Host "===================================" -ForegroundColor Cyan
+
 Write-Host "        Process Manager            " -ForegroundColor Cyan
 Write-Host "===================================" -ForegroundColor Cyan
 
