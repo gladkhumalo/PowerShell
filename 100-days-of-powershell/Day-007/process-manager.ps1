@@ -15,11 +15,9 @@ Format-Table -AutoSize
 
 $ProcessName = Read-Host "`nEnter the name of a process to stop (or press Enter to skip)"
 
-if (![string]::IsNullOrWhiteSpace($ProcessName))
-{
-    try
-    {
-        $Process = Get-Process -Name $ProcessName -ErrorAction Stop
+if (![string]::IsNullOrWhiteSpace($ProcessName)) {
+    try {
+            $Process = Get-Process -Name $ProcessName -ErrorAction Stop
 
         Write-Host ""
         Write-Host "Process found:" -ForegroundColor Green
