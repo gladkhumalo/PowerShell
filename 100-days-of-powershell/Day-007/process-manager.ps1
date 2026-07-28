@@ -1,13 +1,12 @@
 # Day 007 - Process Manager
 
-
+Write-Host "===================================" -ForegroundColor Cyan
 Write-Host "        Process Manager            " -ForegroundColor Cyan
 Write-Host "===================================" -ForegroundColor Cyan
 
 Write-Host "`nTop 10 Processes by Memory Usage`n" -ForegroundColor Yellow
 
-Get-Process |
-Sort-Object WorkingSet -Descending |
+Get-Process | Sort-Object WorkingSet -Descending |
 Select-Object -First 10 `
     Name,
     Id,
