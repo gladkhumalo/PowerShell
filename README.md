@@ -89,6 +89,9 @@ This challenge is designed to help me:
 | 003 | Disk Space Monitor             | ✔      |
 | 004 | Windows Event Log Analyzer  |   ✔  |
 | 005 | Network Connectivity Tester  |   ✔  |
+| 006 | Windows Event Log Analyzer  |   ✔  |
+| 007 | Process Manager  |   ✔  |
+
 
 ---
 
