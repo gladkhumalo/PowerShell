@@ -1,6 +1,6 @@
 # Day 002 - Windows Service Health Checker
 
-Write-Host "===================================" -ForegroundColor Cyan
+Write-Host "***********************************" -ForegroundColor Cyan
 Write-Host "     Service Health Checker        " -ForegroundColor Cyan
 Write-Host "===================================" -ForegroundColor Cyan
 
