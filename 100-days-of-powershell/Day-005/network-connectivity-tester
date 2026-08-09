@@ -1,6 +1,6 @@
 # Day 006 - Network Connectivity Tester
 
-Write-Host "===================================" -ForegroundColor 
+Write-Host "===================================" -ForegroundColor Azure
 Write-Host "    Network Connectivity Tester    " -ForegroundColor Cyan
 Write-Host "===================================" -ForegroundColor Cyan
 
