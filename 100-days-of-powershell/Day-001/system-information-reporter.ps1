@@ -43,7 +43,7 @@ Select-Object @{
 Write-Host "`nReport Generated:"
 Write-Host (Get-Date)
 
-# Create report object
+# Create report 
 $Report = [PSCustomObject]@{
     ComputerName = $ComputerName
     OperatingSystem = $OS.Caption
