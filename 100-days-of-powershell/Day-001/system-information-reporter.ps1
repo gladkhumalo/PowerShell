@@ -56,4 +56,5 @@ $Report = [PSCustomObject]@{
 # Export report to CSV
 $Report | Export-Csv -Path ".\system-report.csv" -NoTypeInformation
 
-Write-Host "`nSystem report exported to system-report.csv" -ForegroundColor Yellow
+Write-Host "`nSystem report exported to system-report.csv" -ForegroundColor Cyan
+
