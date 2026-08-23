@@ -20,7 +20,7 @@ Develop a PowerShell script that performs basic network connectivity tests and g
 * Measure-Object
 * Export-Csv
 
-## Real-World Use Case
+## Use Case
 
 Network connectivity testing is one of the first troubleshooting steps performed by IT Support technicians. This script automates basic diagnostics by checking whether important hosts are reachable and measuring response times.
 
