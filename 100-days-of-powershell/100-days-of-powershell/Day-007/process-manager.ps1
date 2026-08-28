@@ -49,5 +49,3 @@ else
     Write-Host ""
     Write-Host "No process selected."
 }
-
-test
