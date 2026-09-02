@@ -1,6 +1,6 @@
-# Day 006 - Network Connectivity Tester
+# Day 005 - Network Connectivity Tester
 
-Write-Host "===================================" -ForegroundColor Azure
+Write-Host "===================================" -ForegroundColor Blue
 Write-Host "    Network Connectivity Tester    " -ForegroundColor Cyan
 Write-Host "===================================" -ForegroundColor Cyan
 
@@ -22,10 +22,11 @@ $Results = foreach ($Target in $Targets) {
         [PSCustomObject]@{
             Target          = $Target
             Reachable       = "Yes"
-            AveragePingMS   = [math]::Round($Average,2)
+            AveragePingMS   = [math]::Round($Average, 2)
             CheckedOn       = Get-Date
         }
-    }else {
+    }
+    else {
 
         [PSCustomObject]@{
             Target          = $Target
@@ -41,7 +42,7 @@ Write-Host "Results" -ForegroundColor Green
 
 $Results | Format-Table -AutoSize
 
-$Results | Export-Csv ".\network-connectivity-report.csv" -NoTypeInformation
+$Results | Export-Csv ".\network-connectivity-report.csv" -NoTypeInformation -Encoding utf8
 
 Write-Host ""
 Write-Host "Report exported to network-connectivity-report.csv" -ForegroundColor Yellow

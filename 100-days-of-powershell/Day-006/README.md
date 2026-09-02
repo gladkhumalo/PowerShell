@@ -1,4 +1,4 @@
-# Day 6 - Windows Event Log Analyzer
+# Day 006 - Windows Event Log Analyzer
 
 ## Objective
 
