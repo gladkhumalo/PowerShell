@@ -37,12 +37,15 @@ By the end of this challenge, I aim to confidently use PowerShell to automate re
 * CPU & Memory Checker
 * Process Killer
 * Disk Space Monitor
+* System Information Reporter
+* Service Health Checker
+* Windows Event Log Analyzer
+* Network Connectivity Tester
+* Process Manager
 
 ### Planned Projects
 
-* Event Log Analyzer
 * Windows Service Monitor
-* System Information Reporter
 * Software Inventory Tool
 * Active Directory User Reports
 * Azure VM Health Checker
@@ -83,14 +86,14 @@ This challenge is designed to help me:
 
 | Day | Topic                          | Status |
 | --- | ------------------------------ | ------ |
-| 000 | Environment Setup & Validation | ✔     |
-| 001 | System Information Reporter    | ✔     |
-| 002 | Service Health Checker         |  ✔    |
-| 003 | Disk Space Monitor             | ✔      |
-| 004 | Windows Event Log Analyzer  |   ✔  |
-| 005 | Network Connectivity Tester  |   ✔  |
-| 006 | Windows Event Log Analyzer  |   ✔  |
-| 007 | Process Manager  |   ✔  |
+| 000 | [Environment Setup & Validation](100-days-of-powershell/Day-000) | Complete |
+| 001 | [System Information Reporter](100-days-of-powershell/Day-001) | Complete |
+| 002 | [Service Health Checker](100-days-of-powershell/Day-002) | Complete |
+| 003 | [Disk Space Monitor](100-days-of-powershell/Day-003) | Complete |
+| 004 | [Windows Event Log Analyzer](100-days-of-powershell/Day-004) | Complete |
+| 005 | [Network Connectivity Tester](100-days-of-powershell/Day-005) | Complete |
+| 006 | [Windows Event Log Analyzer](100-days-of-powershell/Day-006) | Complete |
+| 007 | [Process Manager](100-days-of-powershell/Day-007) | Complete |
 
 
 ---
@@ -98,3 +101,7 @@ This challenge is designed to help me:
 ## Connect With Me
 
 Feel free to follow my journey, provide feedback, or connect with me as I continue building my skills in PowerShell, Azure, Microsoft 365, and Cybersecurity.
+
+## Feedback and contributions
+
+Suggestions are welcome. Open an issue to report a problem or propose an improvement. If you want to contribute code, create a branch, make one focused change, and open a pull request describing what changed and how you tested it.
