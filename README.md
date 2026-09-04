@@ -56,7 +56,7 @@ By the end of this challenge, I aim to confidently use PowerShell to automate re
 
 ---
 
-## Tech Stack
+## Stack
 
 * PowerShell 7
 * Windows PowerShell
