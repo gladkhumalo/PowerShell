@@ -2,7 +2,7 @@
 
 ## Objective
 
-Develop a PowerShell script that displays the top memory-consuming processes and provides the option to safely terminate a selected process.
+Build a PowerShell script that displays the top memory-consuming processes and provides the option to safely terminate a selected process.
 
 ## Features
 
