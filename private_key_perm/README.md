@@ -9,7 +9,7 @@ This happens because your private key file (`.ppk` or `.pem`) has permissions th
 
 ---
 
-## Why This Happens
+## Why does this happen?
 SSH clients enforce strict security requirements for private keys.
 
 If Windows permissions allow other users or groups to read the file, SSH will refuse to use the key and display a permissions error.
