@@ -18,6 +18,16 @@ By the end of this challenge, I aim to confidently use PowerShell to automate re
 
 ---
 
+## Repository Layout
+
+| Folder | Purpose |
+| --- | --- |
+| [100-days-of-powershell/](100-days-of-powershell) | Daily learning journal — one folder per day, tracking scripts and notes as skills are built up. |
+| [System-Health-Maintenance/](System-Health-Maintenance) | Production-ready, refactored versions of the monitoring scripts from the daily journal. |
+| [private_key_perm/](private_key_perm) | Standalone guide for troubleshooting Windows SSH private key permissions. |
+
+---
+
 ## What You'll Find Here
 
 * Daily PowerShell learning exercises
@@ -92,7 +102,7 @@ This challenge is designed to help me:
 | 003 | [Disk Space Monitor](100-days-of-powershell/Day-003) | Complete |
 | 004 | [Windows Event Log Analyzer](100-days-of-powershell/Day-004) | Complete |
 | 005 | [Network Connectivity Tester](100-days-of-powershell/Day-005) | Complete |
-| 006 | [Windows Event Log Analyzer](100-days-of-powershell/Day-006) | Complete |
+| 006 | [Event Log Analyzer — Critical Errors (24h)](100-days-of-powershell/Day-006) | Complete |
 | 007 | [Process Manager](100-days-of-powershell/Day-007) | Complete |
 
 
