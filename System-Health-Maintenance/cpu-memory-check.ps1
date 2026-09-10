@@ -1,4 +1,4 @@
-<# It does exactly what you asked:
+﻿<# It does exactly what you asked:
     1. Tracks CPU usage over time
     2. Alerts when CPU is too high
     3. Monitors RAM usage
@@ -41,7 +41,7 @@ function Get-MemoryUsage {
 # ============================
 # FUNCTION: Get Top Processes
 # ============================
-function Get-TopProcesses {
+function Get-TopProcess {
     Get-Process |
         Sort-Object CPU -Descending |
         Select-Object -First $topProcesses Name, CPU, PM
@@ -70,7 +70,7 @@ while ($true) {
 
     # Top Processes
     Write-Host "`nTop $topProcesses Processes by CPU:"
-    Get-TopProcesses | Format-Table -AutoSize
+    Get-TopProcess | Format-Table -AutoSize
 
     Start-Sleep -Seconds $interval
 }
